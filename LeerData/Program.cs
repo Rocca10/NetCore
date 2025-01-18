@@ -8,14 +8,15 @@ namespace LeerData
     {
         static void Main(string[] args)
         {
-            using(var db = new AppVentaCursosContext()){
-                var cursos = db.Curso.AsNoTracking();
-                foreach(var curso in cursos){
-                    Console.WriteLine(curso.CursoId+" -- "+curso.Titulo + "---" + curso.Descripcion +"---" + curso.fechaPublicacion);
+            using (var db = new AppVentaCursosContext()){
+                var cursos = db.Curso.Include(c => c.InstructorLink).ThenInclude(ci => ci.Instructor);
+                foreach (var curso in cursos){
+                    Console.WriteLine(curso.Titulo);
+                    foreach (var insLink in curso.InstructorLink){
+                        Console.WriteLine("*************" + insLink.Instructor.Nombre);
+                    }
                 }
             }
-
-
         }
     }
 }

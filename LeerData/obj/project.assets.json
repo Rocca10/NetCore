@@ -4931,11 +4931,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\NetCore\\LeerData\\LeerData.csproj",
+      "projectUniqueName": "C:\\Users\\Nico\\Desktop\\NetCore\\LeerData\\LeerData.csproj",
       "projectName": "LeerData",
-      "projectPath": "C:\\NetCore\\LeerData\\LeerData.csproj",
+      "projectPath": "C:\\Users\\Nico\\Desktop\\NetCore\\LeerData\\LeerData.csproj",
       "packagesPath": "C:\\Users\\Nico\\.nuget\\packages\\",
-      "outputPath": "C:\\NetCore\\LeerData\\obj\\",
+      "outputPath": "C:\\Users\\Nico\\Desktop\\NetCore\\LeerData\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Nico\\AppData\\Roaming\\NuGet\\NuGet.Config"
